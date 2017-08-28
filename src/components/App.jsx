@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import request from 'superagent';
+import { Alert, Button, Card} from 'antd';
 
 
 export default class App extends Component{
@@ -27,6 +28,8 @@ export default class App extends Component{
         return(
             <div>
                 <h1>Consumiendo API express con React</h1>
+                <Button type="primary">Danger</Button>
+                <Alert message="Success Text" type="success" />
                 <ul>
                     {users}
                 </ul>
